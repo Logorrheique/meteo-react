@@ -1,0 +1,26 @@
+.header > h1 {
+  display: flex;
+  justify-content: center;
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+.wheatherCard {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px red solid;
+}
+.wheatherState {
+  display: flex;
+  width: 100%;
+  border: red solid 1px;
+}
+.metrics {
+  display: flex;
+  width: 50%;
+}
+.cityData {
+  display: flex;
+  width: 50%;
+}
