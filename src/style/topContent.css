@@ -1,0 +1,27 @@
+/*TOP*/
+.topContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 1px black solid;
+    background-color: #d3c4c1;
+}
+.topContent > img {
+    height: 32px;
+    width: 32px;
+
+    margin-left: 10px;
+}
+.topContent > p {
+    font-size: 13px;
+    margin-right: 10px;
+}
+.metrics {
+    display: flex;
+    width: 70%;
+    height: 70px;
+}

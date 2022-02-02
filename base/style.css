@@ -1,132 +1,137 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+        'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 .header > h1 {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 .main-content {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 .wheatherCard {
-  display: flex;
-  flex-wrap: wrap;
-  width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
 }
 /*TOP*/
 .wheatherState {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 50px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border: 1px black solid;
-  background-color: #d3c4c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 1px black solid;
+    background-color: #d3c4c1;
 }
 .wheatherState > img {
-  height: 32px;
-  width: 32px;
+    height: 32px;
+    width: 32px;
+
+    margin-left: 10px;
+}
+.wheatherState > p {
+    font-size: 13px;
+    margin-right: 10px;
 }
 .metrics {
-  display: flex;
-  width: 70%;
-  height: 70px;
+    display: flex;
+    width: 70%;
+    height: 70px;
 }
 /* MEDIAN */
 .median-metrics {
-  display: flex;
-  flex-direction: center;
-  justify-content: center;
-  width: 100%;
-  border-left: 1px black solid;
-  border-right: 1px black solid;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    width: 100%;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
 }
 .median-metrics > div {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
 }
 .median-metrics > div > * {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 .median-metrics > div > img {
-  display: flex;
-  align-self: center;
-  height: 32px;
-  width: 32px;
+    display: flex;
+    align-self: center;
+    height: 32px;
+    width: 32px;
 }
 .median-metrics > div > h5 {
-  margin: 0px;
+    margin: 0px;
 }
 
 /*BOTTOM*/
 .bottom-wheather {
-  display: flex;
-  width: 100%;
-  height: 70px;
-  vertical-align: center;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    vertical-align: center;
 }
 .wind {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
-  align-items: center;
-  width: 35%;
-  border-top: 1px black solid;
-  border-bottom: 1px black solid;
-  border-left: 1px black solid;
-  border-bottom-left-radius: 20px;
+    align-items: center;
+    width: 35%;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    border-left: 1px black solid;
+    border-bottom-left-radius: 20px;
 }
 .wind > img {
-  height: 32px;
-  width: 32px;
-  margin-bottom: 5px;
+    height: 32px;
+    width: 32px;
+    margin-bottom: 5px;
 }
 .wind > p {
-  font-size: 11px;
-  margin: 0px;
+    font-size: 11px;
+    margin: 0px;
 }
 .tempMinMax {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 30%;
-  border-top: 1px black solid;
-  border-bottom: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
 }
 .tempMinMax > * {
-  display: flex;
-  font-size: 11px;
-  justify-content: center;
-  margin: 0px;
+    display: flex;
+    font-size: 11px;
+    justify-content: center;
+    margin: 0px;
 }
 
 .cityData {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 35%;
-  height: 70px;
-  border-left: 1px black solid;
-  background-color: black;
-  color: white;
-  border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 35%;
+    height: 70px;
+    border-left: 1px black solid;
+    background-color: black;
+    color: white;
+    border-bottom-right-radius: 20px;
 }
 .cityData > h3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  width: 100%;
-  margin: 0px;
+    width: 100%;
+    margin: 0px;
 }

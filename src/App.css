@@ -1,5 +1,18 @@
 .App {
-  display: flex;
-  align-items: center;
-  border: 1px red solid;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px red solid;
+}
+.main-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.header {
+    width: 100%;
+}
+.header > h1 {
+    display: flex;
+    justify-content: center;
 }

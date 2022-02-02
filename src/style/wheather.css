@@ -1,0 +1,5 @@
+.wheatherCard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+}

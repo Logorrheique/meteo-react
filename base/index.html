@@ -1,53 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>meteo-react</title>
-  </head>
-  <body>
-    <div id="root">
-      <div class="header">
-        <h1>Meteo-React</h1>
-      </div>
-      <div class="main-content">
-        <div class="wheatherCard">
-          <div class="wheatherState">
-            <img src="sun.svg" alt="" />
-          </div>
-          <div class="median-metrics">
-            <div>
-              <img src="thermometre.svg" alt="temperature" />
-              <h6>15 C°</h6>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="Web site created using create-react-app" />
+        <link rel="stylesheet" href="style.css" />
+        <title>meteo-react</title>
+    </head>
+    <body>
+        <div id="root">
+            <div class="header">
+                <h1>Meteo-React</h1>
             </div>
-            <div>
-              <img src="user.svg" alt="feel" />
-              <h6>20 C°</h6>
+            <div class="main-content">
+                <div class="wheatherCard">
+                    <div class="wheatherState">
+                        <p>Clair</p>
+                        <img src="sun.svg" alt="" />
+                    </div>
+                    <div class="median-metrics">
+                        <div>
+                            <img src="thermometre.svg" alt="temperature" />
+                            <h6>15 C°</h6>
+                        </div>
+                        <div>
+                            <img src="user.svg" alt="feel" />
+                            <h6>20 C°</h6>
+                        </div>
+                    </div>
+                    <div class="bottom-wheather">
+                        <div class="wind">
+                            <img src="wind.svg" alt="" />
+                            <p>15 km/h</p>
+                        </div>
+                        <div class="tempMinMax">
+                            <p>min : -10</p>
+                            <p>max : +15</p>
+                            <p>hum : 20%</p>
+                        </div>
+                        <div class="cityData">
+                            <h4>Larchant</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="bottom-wheather">
-            <div class="wind">
-              <img src="wind.svg" alt="" />
-              <p>15 km/h</p>
-            </div>
-            <div class="tempMinMax">
-              <p>min : -10</p>
-              <p>max : +15</p>
-              <p>hum : 20%</p>
-            </div>
-            <div class="cityData">
-              <h4>Larchant</h4>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
