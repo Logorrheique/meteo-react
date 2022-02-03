@@ -16,6 +16,7 @@ const WheatherCard = ({ objecte }) => {
     return (
         <>
             <div className="wheatherCard">
+                <img src="http://localhost:3000/img/wheather.png" alt="" />
                 <TopContent
                     wheather={object.wheather}
                     wheatherImg={object.wheatherImg}

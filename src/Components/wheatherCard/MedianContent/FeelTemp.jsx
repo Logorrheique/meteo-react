@@ -1,7 +1,7 @@
-const FeelTemp = ({ tempFeel }) => {
+const FeelTemp = ({ tempFeel, imgFeel }) => {
     return (
         <div>
-            <img src="../img/user.svg" alt="" />
+            <img src={imgFeel} alt="" />
             <h6>{tempFeel}C°</h6>
         </div>
     );
