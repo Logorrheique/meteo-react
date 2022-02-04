@@ -1,5 +1,6 @@
 .wheatherCard {
-    display: flex;
-    flex-wrap: wrap;
-    width: 250px;
+  flex-wrap: wrap;
+  width: 250px;
+  height: 170px;
+  margin: 20px;
 }
