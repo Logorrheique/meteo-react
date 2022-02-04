@@ -1,11 +1,9 @@
-const WheaterState = ({ state, description }) => {
-    return (
-        <div className="wheatherState">
-            <p>{state}</p>
-            <img src="{description}" alt="">
-                {description}
-            </img>
-        </div>
-    );
+const WheaterState = ({ state, img }) => {
+  return (
+    <>
+      <p>{state}</p>
+      <img src={img} alt=""></img>
+    </>
+  );
 };
 export default WheaterState;
