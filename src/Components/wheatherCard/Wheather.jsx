@@ -6,7 +6,7 @@ const WheatherCard = ({ objecte }) => {
   const object = {
     wheather: "Clair",
     temp: 15,
-    tempFeelLike: 18,
+    tempFeelLike: 1,
     windspeed: 15,
     tempMin: -1,
     tempMax: 2,
@@ -29,7 +29,7 @@ const WheatherCard = ({ objecte }) => {
           StrengthImg={object.winImg}
           tempMin={object.tempMin}
           tempMax={object.tempMax}
-          hum={object.hum}
+          humidity={object.hum}
           cityName={object.nameCity}
         ></BottomContent>
       </div>

@@ -7,7 +7,7 @@ const MedianContent = ({ temp, feelTemp }) => {
   return (
     <div className="medianContent">
       <Temp temp={temp} imgTemp={tempImg}></Temp>
-      <FeelTemp FeelTemp={feelTemp} imgFeel={tempFeel}></FeelTemp>
+      <FeelTemp tempFeel={feelTemp} imgFeel={tempFeel}></FeelTemp>
     </div>
   );
 };
