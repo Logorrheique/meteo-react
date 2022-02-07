@@ -1,0 +1,11 @@
+// const getWheather = city => {
+//     axios
+//         .get(
+//             `http://api.openweathermap.org/data/2.5/weather?q=$Paris&appid=$4fb57f54267ffcb73fb6b5109bada85e`
+//         )
+//         .then(resp => {
+//             const data = resp;
+//             console.log(data);
+//             return resp.json();
+//         });
+// };

@@ -1,12 +1,20 @@
-const express = require('express');
-const app = express();
-const port = process.env.PORT || 3001;
+// Depedencies
 require('dotenv').config();
-app.get('/', (req, res) => {
-    res.set('Content-Type', 'text/html');
-    res.send('Hello world !!');
-});
+const express = require('express');
+const cors = require('cors');
+const app = express();
+const port = process.env.PORT;
 
+//import routes
+const { getWheather } = require('./routes/getData');
+
+//middleware
+app.use(cors());
+app.use(express.urlencoded({ extended: true }));
+
+app.use(express.json());
+
+app.use('/api', getWheather);
 app.listen(port, () => {
     console.log('Server app listening on port ' + port);
 });
