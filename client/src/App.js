@@ -4,7 +4,6 @@ import Header from "./Components/Header";
 import React, { useState } from "react";
 function App() {
   const [count, setCount] = useState([]);
-  setCount();
   return (
     <div className="App">
       <div className="header">
