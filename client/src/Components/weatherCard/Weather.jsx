@@ -3,6 +3,7 @@ import MedianContent from "./MedianContent/MedianContent";
 import TopContent from "./TopContent/TopContent";
 import "./../../style/weather.css";
 const WeatherCard = ({ weatherObject }) => {
+  console.log(weatherObject);
   return (
     <>
       <div className="weatherCard">
