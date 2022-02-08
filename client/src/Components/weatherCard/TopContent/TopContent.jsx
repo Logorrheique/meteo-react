@@ -1,10 +1,10 @@
-import WheaterState from "./wheatherState";
+import WeatherState from "./WeatherState";
 import "./../../../style/topContent.css";
 import stateImg from "../../../img/sun.svg";
-const TopContent = ({ wheather, wheatherImg }) => {
+const TopContent = ({ weather, weatherImg }) => {
   return (
     <div className="topContent">
-      <WheaterState state={wheather} img={stateImg}></WheaterState>
+      <WeatherState state={weather} img={stateImg}></WeatherState>
     </div>
   );
 };

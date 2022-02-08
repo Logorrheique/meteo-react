@@ -1,4 +1,4 @@
-const WheaterState = ({ state, img }) => {
+const WeatherState = ({ state, img }) => {
   return (
     <>
       <p>{state}</p>
@@ -6,4 +6,4 @@ const WheaterState = ({ state, img }) => {
     </>
   );
 };
-export default WheaterState;
+export default WeatherState;
