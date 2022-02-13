@@ -1,17 +1,19 @@
 import WeatherCard from './Components/weatherCard/Weather';
 import './App.css';
 import Header from './Components/Header';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 const axios = require('axios');
+
 function App() {
-    const tab = [];
+    const inputEl = useRef(null);
+    const [card, setCard] = useState([]);
     const getValue = () => {
-        const city = document.getElementById('in').value;
+        const city = inputEl.current.value;
         axios
             .get(`http://localhost:3001/api/${city}`)
             .then(res => {
+                setCard([...card, res.data]);
                 console.log(res.data);
-                tab.push(res.data);
             })
             .catch(err => {
                 console.log(err);
@@ -22,16 +24,15 @@ function App() {
         <div className="App">
             <div className="header">
                 <h1>Meteo-React</h1>
-                <input id="in"></input>
+                <input ref={inputEl}></input>
                 <button type="button" onClick={getValue}>
-                    Récupérer la valeur
+                    Mathis
                 </button>
             </div>
             <div className="main-content">
-                {tab.map(e => {
-                    console.log(e);
-                    <WeatherCard weatherObject={e}></WeatherCard>;
-                })}
+                {card.map(e => (
+                    <WeatherCard weatherObject={e} key={e.name}></WeatherCard>
+                ))}
             </div>
         </div>
     );
