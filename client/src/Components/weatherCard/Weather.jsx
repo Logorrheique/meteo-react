@@ -1,30 +1,28 @@
-import BottomContent from "./BottomContent/BottomContent";
-import MedianContent from "./MedianContent/MedianContent";
-import TopContent from "./TopContent/TopContent";
-import "./../../style/weather.css";
+import BottomContent from './BottomContent/BottomContent';
+import MedianContent from './MedianContent/MedianContent';
+import TopContent from './TopContent/TopContent';
+import './../../style/weather.css';
 const WeatherCard = ({ weatherObject }) => {
-  console.log(weatherObject);
-  return (
-    <>
-      <div className="weatherCard">
-        <TopContent
-          weather={weatherObject.weather}
-          weatherImg={weatherObject.weatherImg}
-        ></TopContent>
-        <MedianContent
-          temp={weatherObject.temp}
-          feelTemp={weatherObject.tempFeelLike}
-        ></MedianContent>
-        <BottomContent
-          windspeed={weatherObject.windspeed}
-          StrengthImg={weatherObject.winImg}
-          tempMin={weatherObject.tempMin}
-          tempMax={weatherObject.tempMax}
-          humidity={weatherObject.hum}
-          cityName={weatherObject.nameCity}
-        ></BottomContent>
-      </div>
-    </>
-  );
+    return (
+        <>
+            <div className="weatherCard">
+                <TopContent
+                    weather={weatherObject.weather.main}
+                    weatherImg={weatherObject.weatherImg}
+                ></TopContent>
+                <MedianContent
+                    temp={weatherObject.main.temp}
+                    feelTemp={weatherObject.main.feels_like}
+                ></MedianContent>
+                <BottomContent
+                    windspeed={weatherObject.wind.speed}
+                    tempMin={weatherObject.main.temp_min}
+                    tempMax={weatherObject.main.temp_max}
+                    humidity={weatherObject.main.humidity}
+                    cityName={weatherObject.name}
+                ></BottomContent>
+            </div>
+        </>
+    );
 };
 export default WeatherCard;
