@@ -28,8 +28,8 @@ const getWeather = (req, res) => {
             res.status(200).json(weatherData);
         })
         .catch(err => {
+            res.status(404).send(err);
             console.log(err);
-            res.status(500).json(err);
         });
 };
 module.exports = getWeather;

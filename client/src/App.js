@@ -2,6 +2,7 @@ import WeatherCard from './Components/weatherCard/Weather';
 import './App.css';
 import Header from './Components/Header';
 import React, { useState, useRef } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 const axios = require('axios');
 
 function App() {
@@ -14,14 +15,16 @@ function App() {
             .then(res => {
                 setCard([...card, res.data]);
                 console.log(res.data);
+                toast.success('Display weather');
             })
             .catch(err => {
-                console.log(err);
+                toast.error('City Not Found');
             });
     };
 
     return (
         <div className="App">
+            <Toaster></Toaster>
             <div className="header">
                 <h1>Meteo-React</h1>
                 <input ref={inputEl}></input>
