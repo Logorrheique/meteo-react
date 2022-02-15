@@ -28,7 +28,7 @@ function App() {
       <Toaster></Toaster>
       <div className="header">
         <h1>Meteo-React</h1>
-        <input ref={inputEl}></input>
+        <input placeholder="Entrez un nom de ville" ref={inputEl}></input>
         <button type="button" onClick={getValue}>
           Meteo
         </button>

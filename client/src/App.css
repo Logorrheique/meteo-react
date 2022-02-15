@@ -28,8 +28,17 @@ body {
   justify-content: center;
 }
 .header > input {
-  width: 100px;
+  width: 150px;
+  border: 2px solid black;
+  background-color: rgba(68, 68, 138, 0.644);
+  color: white;
+  border-radius: 4px;
 }
 .header > button {
+  border: 2px solid black;
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+
   width: 100px;
 }
