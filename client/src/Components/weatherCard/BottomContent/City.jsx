@@ -1,8 +1,8 @@
 const CityData = ({ city }) => {
-    return (
-        <div className="cityData">
-            <h4>{city}</h4>
-        </div>
-    );
+  return (
+    <div className="cityData">
+      <p>{city}</p>
+    </div>
+  );
 };
 export default CityData;

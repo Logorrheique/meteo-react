@@ -52,11 +52,11 @@
   color: white;
   border-bottom-right-radius: 20px;
 }
-.cityData > h3 {
+.cityData > p {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 100%;
+  font-size: 2vh;
   margin: 0px;
 }
