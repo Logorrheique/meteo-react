@@ -1,54 +1,55 @@
 html {
-  font-family: "Changa", sans-serif;
+    font-family: 'Changa', sans-serif;
 }
 body {
-  font-family: "Changa", sans-serif;
-  margin: 0;
+    font-family: 'Changa', sans-serif;
+    margin: 0;
 }
 .App {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .main-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  font-family: "Changa", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    font-family: 'Changa', sans-serif;
 }
 .main-content > div {
-  height: 200px;
+    height: 200px;
 }
 .header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .header > h1 {
-  margin: -40px;
-  display: flex;
-  justify-content: center;
+    margin: -40px;
+    display: flex;
+    justify-content: center;
 }
 .header > input {
-  width: 150px;
-  border: 2px solid black;
-  background-color: rgb(236, 179, 101);
-  border-radius: 4px;
-  margin: 40px;
-  font-family: "Changa", sans-serif;
+    width: 150px;
+    border: 2px solid black;
+    background-color: #d3c4c1;
+    border-radius: 4px;
+    margin: 40px;
+    font-family: 'Changa', sans-serif;
 }
 .header > button {
-  border: 2px solid black;
-  background-color: rgb(4, 28, 50);
-  color: white;
-  border-radius: 4px;
-  font-family: "Changa", sans-serif;
-  width: 100px;
+    border: 2px solid black;
+    background-color: rgb(6, 70, 99);
+    color: rgb(239, 247, 225);
+    border-radius: 4px;
+    font-family: 'Changa', sans-serif;
+    width: 100px;
 }
 .header > button:hover {
-  background-color: rgb(4, 41, 58);
+    background-color: rgb(162, 208, 193);
+    color: black;
 }
