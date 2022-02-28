@@ -1,9 +1,11 @@
+const { kelvinToCelsius } = require('../utils/kelvinToCelsius');
 const axios = require('axios');
 require('dotenv').config();
 
 const getWeather = (req, res) => {
     const city = req.params.city;
     let weatherData = {};
+
     axios
         .get(
             `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.API_KEY}`
@@ -15,10 +17,10 @@ const getWeather = (req, res) => {
                     main: response.data.weather[0].main
                 },
                 main: {
-                    temp: response.data.main.temp,
-                    feels_like: response.data.main.feels_like,
-                    temp_min: response.data.main.temp_min,
-                    temp_max: response.data.main.temp_max,
+                    temp: kelvinToCelsius(response.data.main.temp).toFixed(2),
+                    feels_like: kelvinToCelsius(response.data.main.feels_like).toFixed(2),
+                    temp_min: kelvinToCelsius(response.data.main.temp_min).toFixed(2),
+                    temp_max: kelvinToCelsius(response.data.main.temp_max).toFixed(2),
                     humidity: response.data.main.humidity
                 },
                 wind: {

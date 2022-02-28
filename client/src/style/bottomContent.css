@@ -10,7 +10,7 @@
     flex-direction: column;
 
     align-items: center;
-    width: 35%;
+    width: 30%;
     border-top: 1px black solid;
     border-bottom: 1px black solid;
     border-left: 1px black solid;
@@ -45,7 +45,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 35%;
+    width: 40%;
     height: 70px;
     border: 1px black solid;
     box-sizing: border-box;
@@ -56,8 +56,8 @@
     display: block;
     justify-content: center;
     align-items: center;
-    font-size: 0.75em;
+    font-size: 0.8em;
     margin: 0px;
     overflow: hidden;
-    padding: 0 8px;
+    padding: 0 5px;
 }

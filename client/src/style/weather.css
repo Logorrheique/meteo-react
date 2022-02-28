@@ -1,6 +1,7 @@
 .weatherCard {
-  flex-wrap: wrap;
-  width: 250px;
-  height: 170px;
-  margin: 20px;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 200px;
+    margin: 20px;
+    user-select: none;
 }

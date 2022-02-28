@@ -1,4 +1,5 @@
 import WeatherCard from './Components/weatherCard/Weather';
+import WeatherStuff from './Components/WeatherStuff/WeatherStuff';
 import './App.css';
 import Header from './Components/Header';
 import React, { useState, useRef } from 'react';
@@ -45,6 +46,7 @@ function App() {
                     <WeatherCard weatherObject={e} key={e.name}></WeatherCard>
                 ))}
             </div>
+            <WeatherStuff></WeatherStuff>
         </div>
     );
 }
