@@ -1,11 +1,17 @@
-import BoxImg from './Box';
+import BoxImg from './BoxImg';
+import plus from './../../../img/plus.svg';
 const BoxBonus = ({ img1, img2, img3, img4 }) => {
     return (
         <div className="boxBonus">
-            <BoxImg></BoxImg>
-            <BoxImg></BoxImg>
-            <BoxImg></BoxImg>
-            <BoxImg></BoxImg>
+            <img src={plus}></img>
+            <div className="bonusBackground">
+                <div className="lightBackground">
+                    <BoxImg></BoxImg>
+                    <BoxImg></BoxImg>
+                    <BoxImg></BoxImg>
+                    <BoxImg></BoxImg>
+                </div>
+            </div>
         </div>
     );
 };
