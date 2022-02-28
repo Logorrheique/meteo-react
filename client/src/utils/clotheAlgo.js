@@ -1,7 +1,7 @@
 const { metricsAlgo } = require('./metricsAlgo.js');
 
 const clotheAlgo = weatherCardTab => {
-    if (weatherCardTab == undefined) {
+    if (weatherCardTab.length != 0) {
         let averageTemp, averageWind, averageHumidity;
         averageTemp =
             weatherCardTab.reduce((acc, curr) => acc + parseInt(curr.main.temp), 0) /

@@ -7,6 +7,7 @@ import toast, { Toaster } from 'react-hot-toast';
 const axios = require('axios');
 const { clotheAlgo } = require('./utils/clotheAlgo.js');
 function App() {
+    let stuff = {};
     const inputEl = useRef(null);
     const [card, setCard] = useState([]);
     const getValue = () => {
@@ -18,6 +19,7 @@ function App() {
                     toast.error('City already found');
                 } else {
                     setCard([...card, res.data]);
+
                     toast.success(`Display of the time in ${city}`);
                 }
             })
@@ -25,6 +27,10 @@ function App() {
                 toast.error('City not found');
             });
     };
+    if (card.length != 0) {
+        stuff = clotheAlgo([...card]);
+    }
+    console.log(stuff);
     return (
         <div className="App">
             <Toaster></Toaster>
@@ -47,7 +53,16 @@ function App() {
                     <WeatherCard weatherObject={e} key={e.name}></WeatherCard>
                 ))}
             </div>
-            <WeatherStuff></WeatherStuff>
+            <WeatherStuff
+                head={stuff.head}
+                topBody={stuff.topBody}
+                lowerBody={stuff.lowerBody}
+                feet={stuff.feet}
+                imgBonus1={stuff.bonus1}
+                imgBonus2={stuff.bonus2}
+                imgBonus3={stuff.bonus3}
+                imgBonus4={stuff.bonus4}
+            ></WeatherStuff>
         </div>
     );
 }

@@ -61,15 +61,7 @@ const metricsAlgo = (temp, wind, humidity) => {
         return resultStuff;
     }
     //negative temperature
-    else if (temp < 25 && temp > 20 && temp < 5 && wind < 5) {
-        resultStuff = {
-            head: bonnet,
-            topBody: coat,
-            lowerBody: cargo,
-            feet: sneakers
-        };
-        return resultStuff;
-    } else if (temp > -5 && temp < 0 && temp < 0 && wind < 5) {
+    else if (temp > -5 && temp < 0 && temp < 0 && wind < 5 && humidity < 75 && humidity > 65) {
         resultStuff = {
             head: bonnet,
             topBody: coat,
@@ -78,7 +70,7 @@ const metricsAlgo = (temp, wind, humidity) => {
             bonus1: gloves
         };
         return resultStuff;
-    } else if (temp > -10 && temp < 0 && wind > 5 && humidity > 75) {
+    } else if (temp > -10 && temp < 0 && wind < 5 && wind > 0 && humidity >= 75) {
         resultStuff = {
             head: bonnet,
             topBody: coat,
