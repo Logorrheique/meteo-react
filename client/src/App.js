@@ -1,29 +1,30 @@
 import WeatherCard from './Components/weatherCard/Weather';
 import WeatherStuff from './Components/WeatherStuff/WeatherStuff';
 import './App.css';
-import Header from './Components/Header';
 import React, { useState, useRef } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
-const axios = require('axios');
 
+const axios = require('axios');
+const { clotheAlgo } = require('./utils/clotheAlgo.js');
 function App() {
     const inputEl = useRef(null);
     const [card, setCard] = useState([]);
-
     const getValue = () => {
         const city = inputEl.current.value;
         axios
             .get(`http://localhost:3001/api/${city}`)
             .then(res => {
-                setCard([...card, res.data]);
-                console.log(res.data);
-                toast.success(`Affichage du temp de${city}`);
+                if ([...card].some(e => e.name == res.data.name)) {
+                    toast.error('City already found');
+                } else {
+                    setCard([...card, res.data]);
+                    toast.success(`Display of the time in ${city}`);
+                }
             })
             .catch(err => {
-                toast.error('Ville introuvable');
+                toast.error('City not found');
             });
     };
-
     return (
         <div className="App">
             <Toaster></Toaster>

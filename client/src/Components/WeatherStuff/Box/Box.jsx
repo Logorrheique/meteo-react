@@ -1,11 +1,11 @@
 import BoxImg from './BoxImg';
 import '../../../style/weatherStuff/weatherStuff.css';
 
-const Box = () => {
+const Box = ({ img }) => {
     return (
         <>
             <div className="boxBackground">
-                <BoxImg></BoxImg>
+                <BoxImg img={img}></BoxImg>
             </div>
         </>
     );

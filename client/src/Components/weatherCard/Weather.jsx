@@ -2,13 +2,14 @@ import BottomContent from './BottomContent/BottomContent';
 import MedianContent from './MedianContent/MedianContent';
 import TopContent from './TopContent/TopContent';
 import OnOff from './OnOff/OnOff';
-import accept from '../../img/onOff_Icon/accept.svg';
+import accept from './../../img/onOff_Icon/accept.svg';
 import React, { useState } from 'react';
 
 import './../../style/weather.css';
 const WeatherCard = ({ weatherObject }) => {
     const [state, setHandle] = useState(0);
     const handleCard = () => {
+        console.log('e');
         state == 0 ? setHandle(accept) : setHandle(0);
     };
     return (
