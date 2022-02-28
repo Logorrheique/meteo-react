@@ -28,6 +28,7 @@
 .boxBonus > img {
     width: 50px;
     height: 50px;
+    border: none;
 }
 .bonusBackground {
     width: 200px;
@@ -57,8 +58,6 @@
     align-items: center;
     width: 80px;
     height: 80px;
-    left: 10px;
-    top: 10px;
     background: #d3c4c1;
     border: 1px solid #000000;
     box-sizing: border-box;
@@ -68,6 +67,7 @@
     width: 50px;
     height: 50px;
 }
+
 .boxBackground {
     display: flex;
     justify-content: center;
