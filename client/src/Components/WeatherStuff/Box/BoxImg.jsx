@@ -1,4 +1,5 @@
 import '../../../style/weatherStuff/weatherStuff.css';
+
 const BoxImg = ({ img }) => {
     return (
         <>

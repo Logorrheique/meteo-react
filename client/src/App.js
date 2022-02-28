@@ -35,6 +35,7 @@ function App() {
         <div className="App">
             <Toaster></Toaster>
             <div className="header">
+                <a href="https://github.com/Logorrheique">My Github</a>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path
                         fill="#064663"
