@@ -1,5 +1,6 @@
 html {
     font-family: 'Changa', sans-serif;
+    margin: 0;
 }
 body {
     font-family: 'Changa', sans-serif;
@@ -7,8 +8,9 @@ body {
 }
 .App {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+    background: #cfcfcf;
 }
 .main-content {
     display: flex;
@@ -20,28 +22,6 @@ body {
 }
 .main-content > div {
     height: 250px;
-}
-.header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.header > a {
-    width: 100%;
-    color: white;
-    background: rgb(6, 70, 99);
-    font-size: 20px;
-    text-decoration: none;
-}
-.header > a:hover {
-    color: #d3c4c1;
-}
-.header > h1 {
-    margin: -40px;
-    display: flex;
-    justify-content: center;
 }
 .header > input {
     width: 150px;

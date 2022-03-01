@@ -15,6 +15,7 @@
     border-bottom: 1px black solid;
     border-left: 1px black solid;
     border-bottom-left-radius: 20px;
+    background: #ecb365;
 }
 .wind > img {
     height: 32px;
@@ -22,7 +23,7 @@
     margin-bottom: 5px;
 }
 .wind > p {
-    font-size: 11px;
+    font-size: 13px;
     margin: 0px;
 }
 .tempMinMax {
@@ -32,10 +33,11 @@
     width: 30%;
     border-top: 1px black solid;
     border-bottom: 1px black solid;
+    background: #ecb365;
 }
 .tempMinMax > * {
     display: flex;
-    font-size: 11px;
+    font-size: 12px;
     justify-content: center;
     margin: 0px;
 }
@@ -56,7 +58,7 @@
     display: block;
     justify-content: center;
     align-items: center;
-    font-size: 0.8em;
+    font-size: 13px;
     margin: 0px;
     overflow: hidden;
     padding: 0 5px;

@@ -1,0 +1,25 @@
+.animateBorder > p {
+    border: 1px solid rgb(6, 70, 99);
+    background: #ecb365;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: animatedBorder2;
+}
+@keyframes animatedBorder2 {
+    0% {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    25% {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    50% {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    100% {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}

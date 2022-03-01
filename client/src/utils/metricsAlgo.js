@@ -23,10 +23,9 @@ import bob from '../img/stuff_icon/bob.svg';
 import sunglasses from '../img/stuff_icon/sunglasses.svg';
 
 const metricsAlgo = (temp, wind, humidity) => {
-    console.log('\nmetrics :' + temp, wind, humidity);
     let resultStuff = {};
     //positive temperature
-    if (temp < 30 && temp >= 25 && wind < 5 && humidity < 60) {
+    if (temp >= 25 && wind < 5 && humidity < 60) {
         resultStuff = {
             head: bob,
             topBody: tshirt,
@@ -52,11 +51,19 @@ const metricsAlgo = (temp, wind, humidity) => {
             feet: sneakers
         };
         return resultStuff;
-    } else if (temp < 10 && temp >= 0 && wind < 5) {
+    } else if (temp < 10 && temp >= 5 && humidity < 50) {
+        resultStuff = {
+            topBody: coat,
+            lowerBody: pants,
+            feet: sneakers
+        };
+        return resultStuff;
+    } else if (temp < 5 && temp >= 0 && wind < 5) {
         resultStuff = {
             topBody: coat,
             lowerBody: cargo,
-            feet: sneakers
+            feet: sneakers,
+            bonus1: gloves
         };
         return resultStuff;
     }
@@ -70,12 +77,12 @@ const metricsAlgo = (temp, wind, humidity) => {
             bonus1: gloves
         };
         return resultStuff;
-    } else if (temp > -10 && temp < 0 && wind < 5 && wind > 0 && humidity >= 75) {
+    } else if (temp < 0 && wind < 20 && wind > 0 && humidity >= 75) {
         resultStuff = {
             head: bonnet,
             topBody: coat,
             lowerBody: cargo,
-            feet: sneakers,
+            feet: boots,
             bonus1: gloves,
             bonus2: coffe,
             bonus3: bouillote,
@@ -96,12 +103,21 @@ const metricsAlgo = (temp, wind, humidity) => {
         return resultStuff;
     }
     //High humidity and positive temperature
-    else if (temp > 5 && wind > 0 && humidity >= 60 && humidity < 80) {
+    else if (temp > 5 && wind >= 0 && humidity >= 40 && humidity < 60) {
         resultStuff = {
-            topBody: sweat,
+            topBody: coat,
             lowerBody: cargo,
             feet: sneakers,
             bonus1: umbrella
+        };
+        return resultStuff;
+    } else if (temp > 5 && wind >= 0 && humidity >= 60 && humidity < 80) {
+        resultStuff = {
+            topBody: coat,
+            lowerBody: cargo,
+            feet: sneakers,
+            bonus1: umbrella,
+            bonus2: imper
         };
         return resultStuff;
     } else if (temp > 5 && wind > 0 && humidity >= 80) {

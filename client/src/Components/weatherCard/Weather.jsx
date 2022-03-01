@@ -1,17 +1,13 @@
 import BottomContent from './BottomContent/BottomContent';
 import MedianContent from './MedianContent/MedianContent';
 import TopContent from './TopContent/TopContent';
-import OnOff from './OnOff/OnOff';
-import accept from './../../img/onOff_Icon/accept.svg';
-import React, { useState } from 'react';
+import ContextCard from '../ContextCard';
+import React, { useContext } from 'react';
 
 import './../../style/weather.css';
 const WeatherCard = ({ weatherObject }) => {
-    const [state, setHandle] = useState(0);
-    const handleCard = () => {
-        console.log('e');
-        state == 0 ? setHandle(accept) : setHandle(0);
-    };
+    const { card, setCard } = useContext(ContextCard);
+    const handleCard = () => setCard(card.filter(e => e.name != weatherObject.name));
     return (
         <>
             <div className="weatherCard" onClick={handleCard}>
@@ -30,7 +26,6 @@ const WeatherCard = ({ weatherObject }) => {
                     humidity={weatherObject.main.humidity}
                     cityName={weatherObject.name}
                 ></BottomContent>
-                <OnOff img={state}></OnOff>
             </div>
         </>
     );
