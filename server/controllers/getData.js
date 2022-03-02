@@ -1,9 +1,6 @@
 const { kelvinToCelsius } = require('../utils/kelvinToCelsius');
 const axios = require('axios');
 require('dotenv').config();
-const getTest = (req, res) => {
-    console.log('OUI');
-};
 const getWeather = (req, res) => {
     const city = req.params.city;
     let weatherData = {};
