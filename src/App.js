@@ -14,7 +14,6 @@ function App() {
     const [card, setCard] = useState([]);
     const getValue = () => {
         const city = inputEl.current.value;
-        console.log(PORT);
         axios
             .get(`http://localhost:3000/api/${city}`)
             .then(res => {
