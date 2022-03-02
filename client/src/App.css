@@ -38,6 +38,7 @@ body {
     border-radius: 4px;
     font-family: 'Changa', sans-serif;
     width: 100px;
+    margin: 4px;
 }
 .header > button:hover {
     background-color: rgb(162, 208, 193);

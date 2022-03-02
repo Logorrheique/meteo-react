@@ -1,9 +1,14 @@
 import '../../../style/onOff.css';
-const OnOff = ({ img }) => {
+import ContextCard from '../../ContextCard';
+import notaccept from '../../../img/onOff_Icon/notaccept.svg';
+import React, { useContext } from 'react';
+const OnOff = ({ city }) => {
+    const { card, setCard } = useContext(ContextCard);
+    const handleCard = () => setCard(card.filter(e => e.name != city));
     return (
         <>
             <div className="onOff">
-                <img src={img} alt=""></img>
+                <img src={notaccept} alt="" onClick={handleCard}></img>
             </div>
         </>
     );

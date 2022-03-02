@@ -1,16 +1,13 @@
 import BottomContent from './BottomContent/BottomContent';
 import MedianContent from './MedianContent/MedianContent';
 import TopContent from './TopContent/TopContent';
-import ContextCard from '../ContextCard';
-import React, { useContext } from 'react';
+import OnOff from './OnOff/OnOff';
 
 import './../../style/weather.css';
 const WeatherCard = ({ weatherObject }) => {
-    const { card, setCard } = useContext(ContextCard);
-    const handleCard = () => setCard(card.filter(e => e.name != weatherObject.name));
     return (
         <>
-            <div className="weatherCard" onClick={handleCard}>
+            <div className="weatherCard">
                 <TopContent
                     weather={weatherObject.weather.main}
                     weatherImg={weatherObject.weatherImg}
@@ -26,6 +23,7 @@ const WeatherCard = ({ weatherObject }) => {
                     humidity={weatherObject.main.humidity}
                     cityName={weatherObject.name}
                 ></BottomContent>
+                <OnOff city={weatherObject.name}></OnOff>
             </div>
         </>
     );

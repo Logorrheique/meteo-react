@@ -21,9 +21,7 @@ function App() {
                     toast.error('City already found');
                 } else {
                     setCard([...card, res.data]);
-                    console.log(...card);
-
-                    toast.success(`Display of the time in ${city}`);
+                    toast.success(`Display of the time in ${res.data.name}`);
                 }
             })
             .catch(err => {
