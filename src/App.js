@@ -28,8 +28,8 @@ function App() {
                 toast.error('City not found');
             });
     };
-    if (card.length != 0) {
-        stuff = clotheAlgo([...card]);
+    if (card.length !== 0) {
+        //stuff = clotheAlgo([...card]);
     }
     const resetCard = () => {
         setCard([]);
