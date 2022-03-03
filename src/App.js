@@ -45,7 +45,15 @@ function App() {
                 <Toaster></Toaster>
                 <Header></Header>
                 <div className="header">
-                    <input placeholder="Type a city .." ref={inputEl}></input>
+                    <input
+                        placeholder="Type a city .."
+                        ref={inputEl}
+                        onKeyPress={e => {
+                            if (e.key === 'Enter') {
+                                getValue();
+                            }
+                        }}
+                    ></input>
                     <button type="button" onClick={getValue}>
                         Meteo
                     </button>
