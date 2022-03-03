@@ -30,8 +30,7 @@ function App() {
             });
     };
     if (card.length !== 0) {
-        console.log('undefined');
-        //stuff = clotheAlgo([...card]);
+        stuff = clotheAlgo([...card]);
     }
     const resetCard = () => {
         setCard([]);
