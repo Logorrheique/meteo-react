@@ -9,6 +9,7 @@
         "axios": "^0.25.0",
         "dotenv": "^15.0.0",
         "express-favicon": "^2.0.1",
+        "nodemon": "^2.0.15",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-hot-toast": "^2.2.0",
@@ -17,7 +18,7 @@
     },
     "proxy": "http://localhost:3001",
     "scripts": {
-        "start": "node server.js",
+        "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"

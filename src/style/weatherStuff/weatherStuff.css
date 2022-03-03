@@ -110,3 +110,15 @@
     justify-content: center;
     flex-direction: column;
 }
+/* MEDIA QUERY */
+@media screen and (max-width: 1604px) {
+    .WeatherStuff {
+        height: 700px;
+    }
+}
+@media screen and (max-width: 515px) {
+    .WeatherStuff {
+        height: 1000px;
+        width: 60%;
+    }
+}

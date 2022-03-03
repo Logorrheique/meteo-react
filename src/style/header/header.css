@@ -82,3 +82,31 @@
     display: flex;
     justify-content: center;
 }
+@media screen and (max-width: 515px) {
+    .header > h1 {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 896px) {
+    .tuto > a {
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 724px) {
+    .tuto > a {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 640px) {
+    .tuto {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .tuto > p {
+        width: 250px;
+    }
+}
