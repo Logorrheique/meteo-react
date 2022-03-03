@@ -20,6 +20,7 @@ function App() {
                 if ([...card].some(e => e.name == res.data.name)) {
                     toast.error('City already found');
                 } else {
+                    console.log(res.data);
                     setCard([...card, res.data]);
                     toast.success(`Display of the time in ${res.data.name}`);
                 }
@@ -29,6 +30,7 @@ function App() {
             });
     };
     if (card.length !== 0) {
+        console.log('undefined');
         //stuff = clotheAlgo([...card]);
     }
     const resetCard = () => {
@@ -55,11 +57,7 @@ function App() {
                 </div>
                 <div className="main-content">
                     {card.map(e => (
-                        <WeatherCard
-                            weatherObject={e}
-                            key={e.name}
-                            onClick={console.log('Z')}
-                        ></WeatherCard>
+                        <WeatherCard weatherObject={e} key={e.name}></WeatherCard>
                     ))}
                 </div>
                 <WeatherStuff
