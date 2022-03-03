@@ -66,6 +66,7 @@
     flex-direction: column;
     align-items: center;
 }
+
 .header > a {
     width: 100%;
     color: white;

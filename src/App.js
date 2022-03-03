@@ -20,7 +20,6 @@ function App() {
                 if ([...card].some(e => e.name == res.data.name)) {
                     toast.error('City already found');
                 } else {
-                    console.log(res.data);
                     setCard([...card, res.data]);
                     toast.success(`Display of the time in ${res.data.name}`);
                 }

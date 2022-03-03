@@ -26,10 +26,10 @@ app.get('/api/:city', (req, res) => {
                     main: response.data.weather[0].main
                 },
                 main: {
-                    temp: response.data.main.temp.toFixed(2),
-                    feels_like: response.data.main.feels_like.toFixed(2),
-                    temp_min: response.data.main.temp_min.toFixed(2),
-                    temp_max: response.data.main.temp_max.toFixed(2),
+                    temp: (response.data.main.temp - 273.15).toFixed(2),
+                    feels_like: (response.data.main.feels_like - 273.15).toFixed(2),
+                    temp_min: (response.data.main.temp_min - 273.15).toFixed(2),
+                    temp_max: (response.data.main.temp_max - 273.15).toFixed(2),
                     humidity: response.data.main.humidity
                 },
                 wind: {
