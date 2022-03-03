@@ -2,7 +2,7 @@ const express = require('express');
 const favicon = require('express-favicon');
 require('dotenv').config();
 const path = require('path');
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT;
 
 const app = express();
 const axios = require('axios');
