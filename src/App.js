@@ -15,7 +15,7 @@ function App() {
     const getValue = () => {
         const city = inputEl.current.value;
         axios
-            .get(`http://localhost:3000/api/${city}`)
+            .get(`https://meteo-react.herokuapp.com/:3000/api/${city}`)
             .then(res => {
                 if ([...card].some(e => e.name == res.data.name)) {
                     toast.error('City already found');
