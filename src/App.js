@@ -11,7 +11,9 @@ const { clotheAlgo } = require('./utils/clotheAlgo.js');
 function App() {
     let stuff = {};
     const inputEl = useRef(null);
+    const [inputValue, setInputValue] = useState('');
     const [card, setCard] = useState([]);
+    const handleUserInput = e => setInputValue(e.target.value);
     const getValue = () => {
         const city = inputEl.current.value;
         axios
@@ -48,11 +50,14 @@ function App() {
                     <input
                         placeholder="Type a city .."
                         ref={inputEl}
+                        value={inputValue}
                         onKeyPress={e => {
                             if (e.key === 'Enter') {
                                 getValue();
+                                setInputValue('');
                             }
                         }}
+                        onChange={handleUserInput}
                     ></input>
                     <button type="button" onClick={getValue}>
                         Meteo
