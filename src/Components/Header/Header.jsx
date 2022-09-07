@@ -13,9 +13,7 @@ const Header = () => {
             <div className="tuto">
                 <p>
                     Hello there! <br></br>Here is my weather application, to start using it you can
-                    simply enter city names in the corresponding field. After that, an algorithm
-                    will describe how you should dress taking into account the destinations you
-                    entered.
+                    simply enter city names in the corresponding field. Then an algorithm will describe how you should dress based on the destinations you entered
                 </p>
                 <a>Meteo-React</a>
             </div>
