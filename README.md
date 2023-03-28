@@ -5,7 +5,7 @@ Here is my weather application using nodejs and react. It gives you a quick over
 
 ## Demo
 
-https://meteo-react.herokuapp.com/
+https://cool-tree-0303.on.fleek.co/
 
 (The demo page can be long to load. Everything is fine, just wait)
 ## Features
