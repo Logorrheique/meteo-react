@@ -17,7 +17,7 @@ function App() {
     const getValue = () => {
         const city = inputEl.current.value;
         axios
-            .get(`https://cool-tree-0303.on.fleek.co//api/${city}`)
+            .get(`https://cool-tree-0303.on.fleek.co/api/${city}`)
             .then(res => {
                 if ([...card].some(e => e.name == res.data.name)) {
                     toast.error('City already found');
